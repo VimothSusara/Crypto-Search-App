@@ -1,0 +1,63 @@
+/* Coins.js file css styling */
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    margin: 2rem 1rem;
+    padding: .7rem 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 500;
+}
+
+.coin-name {
+    margin-left: -4rem;
+}
+
+/* CoinItem.js file css styling */
+
+.coin-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 8px;
+    margin: 2rem 1rem;
+    padding: .7rem 1rem;
+    transition: .4s ease-in-out;
+}
+
+.coin-row:hover {
+    transform: scale(1.04);
+    transition-duration: .5s ease-in-out;
+    cursor: pointer;
+}
+
+img {
+    height: 40px;
+    width: auto;
+    margin-right: 7px; 
+}
+
+.img-symbol {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width : 720px){
+    .hide-mobile {
+        display: none;
+    }
+}
+
+
+
+

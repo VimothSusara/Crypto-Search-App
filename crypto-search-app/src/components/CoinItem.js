@@ -1,4 +1,5 @@
 import React from "react";
+import "./Coins.css";
 
 export const CoinItem = (props) => {
   return (
@@ -8,10 +9,12 @@ export const CoinItem = (props) => {
         <img src={props.coins.image} alt="" />
         <p>{props.coins.symbol}</p>
       </div>
-      <p>{props.coins.current_price}</p>
-      <p>{props.coins.price_change_percentage_24h}</p>
-      <p className="hide-mobile">{props.coins.total_volume}</p>
-      <p className="hide-mobile">{props.coins.market_cap}</p>
+      <p>${props.coins.current_price.toLocaleString()}</p>
+      <p>{props.coins.price_change_percentage_24h.toFixed(2)}%</p>
+      <p className="hide-mobile">
+        ${props.coins.total_volume.toLocaleString()}
+      </p>
+      <p className="hide-mobile">${props.coins.market_cap.toLocaleString()}</p>
     </div>
   );
 };
