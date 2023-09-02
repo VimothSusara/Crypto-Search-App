@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon {
+    font-size: 2rem;
+    color: rgb(255, 204, 0);
+}
+
+h1 {
+    display: flex;
+    margin-left: 0.4rem;
+    text-shadow: 3px 4px 7px rgba(141, 141, 141, 0.8);
+}
+
+.wavy {
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    font-size: 34px;
+    color: rgb(25, 25, 25);
+    text-transform: uppercase;
+    animation: flip 3s infinite;
+    animation-delay: calc(.3s * var(--i));
+    
+}
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg);
+    }
+}
