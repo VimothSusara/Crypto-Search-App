@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCoins } from "react-icons/fa";
+import { GiCrownCoin } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <Link to="/">
       <div className="navbar">
-        <FaCoins className="icon" />
+        <GiCrownCoin className="icon" />
         <h1>
           {" "}
           Crypto
